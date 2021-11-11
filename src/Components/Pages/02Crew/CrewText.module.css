@@ -1,0 +1,121 @@
+.Role {
+  margin-top: 9.625rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.Name {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.Bio {
+  color: var(--color-blue);
+  margin-top: 1.5rem;
+  max-width: 445px;
+  height: 240px;
+}
+.Buttons {
+  margin-bottom: 5.875rem;
+}
+.Button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  transition: opacity 0.3s;
+}
+.Button:hover {
+  opacity: 0.5;
+}
+.Button.Active {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .Name {
+    max-width: 400px;
+  }
+
+  .Role {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .Role {
+    font-size: 1.5rem;
+    margin-top: 3.75rem;
+  }
+
+  .Name {
+    max-width: initial;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .Bio {
+    max-width: initial;
+    height: initial;
+    max-width: 30rem;
+    margin: 0 auto;
+    font-size: 1rem !important;
+    line-height: 28px !important;
+    margin-top: 1rem;
+    height: 150px;
+  }
+  .Role,
+  .Name,
+  .Bio {
+    text-align: center;
+  }
+  .Buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .Button {
+    width: 10px;
+    height: 10px;
+    margin-right: 1rem;
+  }
+  .Button:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .Text {
+    grid-area: textArea;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .Buttons {
+    margin-top: 2rem;
+  }
+  .Role {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .Name {
+    font-size: 1.5rem;
+  }
+  .Bio {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .Bio {
+    height: 200px;
+  }
+}
+@media (max-width: 350px) {
+  .Bio {
+    height: initial;
+    min-height: 225px;
+    margin-bottom: 1rem;
+  }
+}

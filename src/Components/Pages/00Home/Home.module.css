@@ -1,0 +1,91 @@
+.Home {
+  display: flex;
+  margin: 100px auto;
+}
+.HomeText {
+  max-width: 450px;
+}
+.HomeText h1 {
+  margin: 1.5rem 0;
+}
+.HomeText p {
+  color: var(--color-blue);
+}
+.HomeExplore {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.ButtonExplore {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  border: none;
+  background: var(--color-white);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.ButtonExplore:hover {
+  box-shadow: 0 0 0 5.5rem rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1150px) {
+  .Home {
+    margin: 80px 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Home {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HomeExplore {
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .HomeText {
+    text-align: center;
+  }
+
+  .ButtonExplore {
+    width: 242px;
+    height: 242px;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomeText {
+    max-width: 100%;
+  }
+  .HomeText h1 {
+    font-size: 80px;
+  }
+  .HomeText h5 {
+    font-size: 16px;
+  }
+  .HomeText p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .ButtonExplore {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .HomeExplore {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 300px) {
+  .HomeText h1 {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,165 @@
+.Header {
+  margin: 40px 0 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Row {
+  width: 35%;
+  height: 1px;
+  background: #fff;
+  transform: translateX(40px);
+  opacity: 0.25;
+  z-index: 2;
+}
+.Nav {
+  height: 100%;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(80px);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Menu {
+  display: none;
+  border: none;
+  background: transparent;
+}
+.NavButtonClose {
+  display: none;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+}
+.Nav ul {
+  list-style: none;
+  display: flex;
+}
+.Nav a {
+  display: block;
+  padding: 2.3rem 0;
+  margin-right: 3rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+.Nav a span {
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+.Nav a:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .Nav a {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 1100px) {
+  .Nav a {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .Nav {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 910px) {
+  .Row {
+    display: none;
+  }
+  .Nav {
+    width: 65%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .Header {
+    margin: 0 0 0 2rem;
+  }
+  .Nav a span {
+    display: none;
+  }
+  .Nav a {
+    font-size: 14px;
+    margin-right: 2rem;
+  }
+  .Nav ul {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .Nav a {
+    margin-right: 1rem;
+  }
+  .Nav ul {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .Header {
+    position: relative;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+  .Logo img {
+    width: 40px;
+  }
+  .Nav {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    height: 100vh;
+    display: none;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: animaNav forwards 0.3s;
+    background: var(--color-black);
+  }
+
+  @keyframes animaNav {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .Nav.OpenMenu {
+    display: block;
+  }
+  .Menu {
+    display: block;
+  }
+  .NavButtonClose {
+    display: block;
+  }
+  .Nav ul {
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .Nav a {
+    padding: 0.5rem 0;
+    margin-right: 0;
+    border: none;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    width: calc(100% - 2rem);
+    border-right: 4px solid transparent;
+  }
+  .Nav a span {
+    display: initial;
+  }
+}

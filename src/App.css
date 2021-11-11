@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+:root {
+  --color-black: #0b0d17;
+  --color-blue: #d0d6f9;
+  --color-white: #ffffff;
+
+  --font-primary: "Bellefair", serif;
+  --font-secondary: "Barlow Condensed", sans-serif;
+  --font-tertiary: "Barlow", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  overflow-x: hidden;
+  transition: background 0.5s;
+}
+
+h1 {
+  font-size: 150px;
+}
+h2 {
+  font-size: 100px;
+}
+h3 {
+  font-size: 56px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-family: var(--font-secondary);
+  color: var(--color-blue);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+p.sub-heading-1 {
+  font-size: 28px;
+}
+
+p.sub-heading-2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  font-family: var(--font-secondary);
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+a.nav-text {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-family: var(--font-secondary);
+}
+
+p.text-body {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: var(--font-tertiary);
+}
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+  main {
+    margin: 0 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body.home {
+  background: var(--color-black)
+    url("./assets/home/background-home-desktop.jpg") no-repeat center
+    center/cover;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 800px) {
+  body.home {
+    background: var(--color-black)
+      url("./assets/home/background-home-tablet.jpg") no-repeat center
+      center/cover;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 425px) {
+  body.home {
+    background: var(--color-black)
+      url("./assets/home/background-home-mobile.jpg") no-repeat center
+      center/cover;
+  }
+}
+
+body.destination {
+  background: var(--color-black)
+    url("./assets/destination/background-destination-desktop.jpg") no-repeat
+    center center/cover;
+}
+
+@media (max-width: 800px) {
+  body.destination {
+    background: var(--color-black)
+      url("./assets/destination/background-destination-tablet.jpg") no-repeat
+      center center/cover;
+  }
+}
+@media (max-width: 425px) {
+  body.destination {
+    background: var(--color-black)
+      url("./assets/destination/background-destination-mobile.jpg") no-repeat
+      center center/cover;
+  }
+}
+
+body.crew {
+  background: var(--color-black)
+    url("./assets/crew/background-crew-desktop.jpg") no-repeat center
+    center/cover;
+}
+
+@media (max-width: 800px) {
+  body.crew {
+    background: var(--color-black)
+      url("./assets/crew/background-crew-tablet.jpg") no-repeat center
+      center/cover;
+  }
+}
+@media (max-width: 425px) {
+  body.crew {
+    background: var(--color-black)
+      url("./assets/crew/background-crew-mobile.jpg") no-repeat center
+      center/cover;
+  }
+}
+
+body.technology {
+  background: var(--color-black)
+    url("./assets/technology/background-technology-desktop.jpg") no-repeat
+    center center/cover;
+}
+
+@media (max-width: 800px) {
+  body.technology {
+    background: var(--color-black)
+      url("./assets/technology/background-technology-tablet.jpg") no-repeat
+      center center/cover;
+  }
+}
+@media (max-width: 425px) {
+  body.technology {
+    background: var(--color-black)
+      url("./assets/technology/background-technology-mobile.jpg") no-repeat
+      center center/cover;
   }
 }
