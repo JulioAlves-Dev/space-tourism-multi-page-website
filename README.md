@@ -24,10 +24,10 @@ Os usuários devem ser capazes de:
 
 ### Screenshot
 
-![](./screenshots/home.png)
-![](./screenshots/destination.png)
-![](./screenshots/home.png)
-![](./screenshots/technology.png)
+![](./screenshots/home.jpeg)
+![](./screenshots/destination.jpeg)
+![](./screenshots/crew.jpeg)
+![](./screenshots/technology.jpeg)
 
 ### Links
 
