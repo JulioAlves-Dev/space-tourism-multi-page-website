@@ -90,6 +90,9 @@ body.home {
     url("./assets/home/background-home-desktop.jpg") no-repeat center
     center/cover;
 }
+body.page404 {
+  background: var(--color-black);
+}
 
 @media (max-width: 800px) {
   body.home {

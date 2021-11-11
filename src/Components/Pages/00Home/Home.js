@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 import ClassBody from "../../../Functions/ClassBody";
 
 const Home = () => {
-  ClassBody("home", ["technology", "destination", "crew"]);
+  ClassBody("home", ["technology", "destination", "crew", "page404"]);
 
   React.useEffect(() => {
     document.title = "Space Tourism";

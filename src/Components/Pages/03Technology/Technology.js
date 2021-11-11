@@ -1,12 +1,12 @@
 import React from "react";
-import ClassBody from "../../../Functions/ClassBody";
+import ClassBody from "./../../../Functions/ClassBody";
 import styles from "./Technology.module.css";
 import Title5Default from "./../../Others/Title5Default";
 import data from "./../../../Data/data.json";
 import TechnologyContent from "./TechnologyContent";
 
 const Technology = () => {
-  ClassBody("technology", ["home", "destination", "crew"]);
+  ClassBody("technology", ["home", "destination", "crew", "page404"]);
 
   const [tech, setTech] = React.useState("Launch vehicle");
   const [dados, setDados] = React.useState(null);

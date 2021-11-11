@@ -6,7 +6,7 @@ import DestinationText from "./DestinationText";
 import Title5Default from "../../Others/Title5Default";
 
 const Destination = () => {
-  ClassBody("destination", ["technology", "home", "crew"]);
+  ClassBody("destination", ["technology", "home", "crew", "page404"]);
   const [destination, setDestination] = React.useState("moon");
   const [dados, setDados] = React.useState(null);
   const [destinationImg, setDestinationImg] = React.useState("");

@@ -6,7 +6,7 @@ import styles from "./Crew.module.css";
 import CrewText from "./CrewText";
 
 const Crew = () => {
-  ClassBody("crew", ["technology", "destination", "home"]);
+  ClassBody("crew", ["technology", "destination", "home", "page404"]);
   const [crew, setCrew] = React.useState("Commander");
   const [dados, setDados] = React.useState(null);
   const [crewImg, setCrewImg] = React.useState("");
