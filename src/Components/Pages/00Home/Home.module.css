@@ -89,3 +89,30 @@
     font-size: 60px;
   }
 }
+
+.HomeText h5,
+.HomeText h1,
+.HomeText p {
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: animaText 0.3s forwards;
+}
+.HomeText h1 {
+  animation-delay: 0.3s;
+}
+.HomeText p {
+  animation-delay: 0.6s;
+}
+.ButtonExplore {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: animaText 0.3s forwards;
+  animation-delay: 0.9s;
+}
+@keyframes animaText {
+  to {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

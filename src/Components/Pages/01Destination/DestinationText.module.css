@@ -129,3 +129,35 @@
     padding-top: 2rem;
   }
 }
+
+.DestinationText h2,
+.Description,
+.Distance,
+.Days {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: animaText 0.3s forwards;
+}
+
+.DestinationText h2 {
+  animation-delay: 0.3s;
+}
+
+.Description {
+  animation-delay: 0.6s;
+}
+
+.Distance {
+  animation-delay: 0.9s;
+}
+
+.Days {
+  animation-delay: 1.2s;
+}
+
+@keyframes animaText {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

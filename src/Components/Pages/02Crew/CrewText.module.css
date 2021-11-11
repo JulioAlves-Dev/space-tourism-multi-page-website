@@ -119,3 +119,26 @@
     margin-bottom: 1rem;
   }
 }
+
+.Role,
+.Name,
+.Bio {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: animaText 0.3s forwards;
+}
+.Role {
+  animation-delay: 0.3s;
+}
+.Name {
+  animation-delay: 0.6s;
+}
+.Bio {
+  animation-delay: 0.9s;
+}
+@keyframes animaText {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

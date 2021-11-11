@@ -2,6 +2,16 @@
   text-transform: uppercase;
   color: #fff;
   margin-top: 3rem;
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: animaText 0.3s forwards;
+}
+@keyframes animaText {
+  to {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .Title span {

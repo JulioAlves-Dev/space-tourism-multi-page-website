@@ -12,6 +12,7 @@ const Crew = () => {
   const [crewImg, setCrewImg] = React.useState("");
 
   React.useEffect(() => {
+    setCrewImg("");
     setDados(
       data.crew.filter(({ role }) => role.toLowerCase() === crew.toLowerCase())
     );
@@ -45,11 +46,10 @@ const Crew = () => {
         {dados && dados.length > 0 && (
           <CrewText dados={dados[0]} crew={crew} setCrew={setCrew} />
         )}
-        {crewImg && (
-          <section className={styles.Img}>
-            <img src={crewImg} alt={dados[0].role} />
-          </section>
-        )}
+
+        <section className={styles.Img}>
+          {crewImg && <img src={crewImg} alt={dados[0].role} />}
+        </section>
       </main>
     </>
   );

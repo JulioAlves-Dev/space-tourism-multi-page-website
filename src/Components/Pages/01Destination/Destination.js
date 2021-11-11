@@ -20,6 +20,7 @@ const Destination = () => {
   }, [destination]);
 
   React.useEffect(() => {
+    setDestinationImg("");
     async function toDefineImg() {
       const response = await import(
         `./../../../assets/destination/${dados[0].images.png}`
@@ -41,7 +42,6 @@ const Destination = () => {
     <main className={styles.Destination}>
       {dados && dados.length > 0 && (
         <>
-          {" "}
           <Title5Default number="01" text="Pick your destination" />
           <section className={styles.Info}>
             <div className={styles.ImgContent}>
