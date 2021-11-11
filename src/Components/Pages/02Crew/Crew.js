@@ -12,7 +12,6 @@ const Crew = () => {
   const [crewImg, setCrewImg] = React.useState("");
 
   React.useEffect(() => {
-    setCrewImg("");
     setDados(
       data.crew.filter(({ role }) => role.toLowerCase() === crew.toLowerCase())
     );
